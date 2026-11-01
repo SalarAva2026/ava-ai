@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b1424">
+<meta name="description" content="آوا؛ دستیار چندتخصصی هوشمند و توسعه‌پذیر">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<title>آوا | دستیار هوشمند شخصی</title>
+<style>
+:root{color-scheme:dark;--bg:#08111f;--panel:#111d2e;--panel2:#17263a;--panel3:#0d1828;--text:#edf4fc;--muted:#a5b5c9;--line:#283b55;--mint:#8be0bd;--blue:#87bfff;--gold:#f2ce82;--red:#ff9e9e;--shadow:0 12px 35px #0005}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 85% 0%,#18334b 0%,transparent 38%),linear-gradient(155deg,#0a1727,#070e19 70%);color:var(--text);font-family:system-ui,-apple-system,"Noto Sans Arabic","Noto Naskh Arabic",sans-serif;min-height:100vh}button,input,textarea,select{font:inherit}button{cursor:pointer}.app{max-width:1100px;margin:auto;padding:16px 14px 40px}.top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:4px 0 17px}.brand{display:flex;align-items:center;gap:11px}.logo{width:48px;height:48px;border-radius:16px;background:linear-gradient(145deg,#a2f0ce,#58a899);color:#09251b;display:grid;place-items:center;font-size:27px;font-weight:900;box-shadow:0 6px 22px #65c4a344}.brand h1{font-size:24px;margin:0}.brand p{margin:2px 0 0;font-size:12px;color:var(--muted)}.version{font-size:11px;color:var(--mint);border:1px solid #356653;padding:6px 9px;border-radius:30px;white-space:nowrap}.hero{border:1px solid #31506a;border-radius:24px;background:linear-gradient(125deg,#1a3549,#14263a 65%,#192d40);padding:19px;margin-bottom:15px;box-shadow:var(--shadow)}.hero h2{font-size:20px;margin:0 0 7px}.hero p{font-size:14px;line-height:1.95;color:#d1dfeb;margin:0}.hero strong{color:var(--mint)}.notice{border:1px solid #6c592f;background:#302817;color:#f9e4b5;border-radius:14px;padding:11px 13px;font-size:12px;line-height:1.9;margin:13px 0}.nav{display:flex;gap:8px;overflow:auto;padding:2px 0 11px;scrollbar-width:thin}.nav button{border:1px solid var(--line);background:#101c2d;color:var(--muted);border-radius:12px;padding:10px 13px;white-space:nowrap;font-size:13px}.nav button.active{background:#254438;border-color:#477d67;color:#dffff0}.page{display:none}.page.active{display:block}.section-title{font-size:17px;margin:20px 2px 11px}.section-sub{font-size:13px;line-height:1.8;color:var(--muted);margin:-4px 2px 12px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.card{background:linear-gradient(160deg,#152439,#101b2b);border:1px solid var(--line);border-radius:18px;padding:14px;min-width:0}.module{min-height:126px}.module .ico{font-size:24px}.module h3{font-size:14px;margin:7px 0 4px}.module p{font-size:12px;line-height:1.75;color:var(--muted);margin:0}.tag{display:inline-block;margin-top:9px;border:1px solid #35566c;border-radius:20px;padding:3px 8px;color:#b8d7ec;font-size:10px}.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;margin-top:12px}.stat{background:#0e1928;border:1px solid var(--line);border-radius:14px;padding:12px}.stat b{display:block;font-size:18px;color:var(--mint)}.stat span{font-size:11px;color:var(--muted)}.row{display:flex;align-items:center;gap:9px;flex-wrap:wrap}.row>*{flex:1}.field{margin:10px 0}.field label{display:block;color:#c8d7e5;font-size:12px;margin:0 2px 6px}.field input,.field textarea,.field select{width:100%;background:#091422;color:var(--text);border:1px solid #354b65;border-radius:12px;padding:11px 12px;outline:none}.field textarea{min-height:90px;resize:vertical;line-height:1.8}.field input:focus,.field textarea:focus,.field select:focus{border-color:#81c9ac}.btn{border:0;border-radius:12px;background:var(--mint);color:#08251a;font-weight:750;padding:11px 15px;font-size:13px}.btn.secondary{background:#26384f;color:#e4eef8;border:1px solid #405670}.btn.gold{background:#4a3a20;color:#ffe6ae;border:1px solid #826b39}.btn.danger{background:#472a31;color:#ffc0c0;border:1px solid #74424c}.btn.full{width:100%;margin-top:5px}.result{background:#0a1624;border:1px dashed #45627d;border-radius:13px;padding:12px;white-space:pre-wrap;line-height:1.9;font-size:13px;color:#dce9f5;margin-top:11px;display:none}.muted{color:var(--muted)}.small{font-size:11px;line-height:1.8}.list{display:grid;gap:8px;margin-top:12px}.idea{display:flex;align-items:flex-start;gap:9px;background:#0e1928;border:1px solid var(--line);border-radius:13px;padding:11px}.idea .txt{flex:1;min-width:0}.idea b{font-size:13px}.idea p{font-size:11px;color:var(--muted);line-height:1.7;margin:4px 0 0;white-space:pre-wrap;overflow-wrap:anywhere}.idea button{border:1px solid #64434a;background:#30202a;color:#ffc3c3;border-radius:9px;padding:6px 9px;font-size:11px}.checklist{display:grid;gap:8px}.check{display:flex;align-items:flex-start;gap:9px;background:#0e1928;border-radius:12px;padding:10px;color:#d6e3ef;font-size:12px;line-height:1.7}.check input{margin-top:4px;accent-color:#8be0bd}.callout{background:#10271f;border:1px solid #34654f;color:#d5f5e5;padding:12px;border-radius:13px;font-size:12px;line-height:1.9}.warning{background:#30251a;border:1px solid #72592e;color:#f5dfb5;padding:12px;border-radius:13px;font-size:12px;line-height:1.9}.divider{height:1px;background:var(--line);margin:15px 0}footer{text-align:center;color:#8294aa;font-size:11px;margin:25px 0 8px;line-height:1.9}.empty{font-size:12px;color:var(--muted);padding:12px;text-align:center;border:1px dashed var(--line);border-radius:12px}.pill{font-size:10px;border-radius:30px;padding:3px 8px;background:#203a32;color:#b4eed4}a{color:var(--blue)}
+@media(min-width:700px){.app{padding:24px}.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero{padding:24px}.stats{grid-template-columns:repeat(4,1fr)}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="top"><div class="brand"><div class="logo">آ</div><div><h1>آوا</h1><p>دستیار هوشمند شخصی · توسعه‌پذیر و چندتخصصی</p></div></div><div class="version">نسخهٔ آزمایشی ۰.۲</div></header>
+<section class="hero"><h2>سلام! به آوا خوش آمدی 🌱</h2><p>هدف ما ساخت دستیار هوشمندی است که بتواند <strong>عمیق فکر کند، تحقیق و بررسی کند، مهارت‌های گوناگون داشته باشد و با تأیید تو قابلیت‌های تازه پیدا کند.</strong> این نسخه، ساختار و چند ابزار محلی اولیه را دارد؛ موتور هوش مصنوعی هنوز وصل نشده است.</p></section>
+<div class="notice">شفافیت مهم است: در این نسخه هنوز پاسخ واقعی هوش مصنوعی، تولید عکس/ویدیو، تحلیل زندهٔ بازار یا کنترل فیزیکی ربات فعال نیست. این کارها بعداً با اتصال امن به مدل‌ها، سرویس‌ها و سخت‌افزارهای مناسب پیاده‌سازی و آزمایش می‌شوند.</div>
+<nav class="nav" aria-label="بخش‌های آوا">
+<button class="active" data-page="home">🏠 خانه</button><button data-page="analysis">🧠 تحلیل عمیق</button><button data-page="video">🎬 تولید ویدیو</button><button data-page="skills">🧰 تخصص‌ها</button><button data-page="growth">✨ توسعهٔ آوا</button><button data-page="chat">💬 گفت‌وگو</button><button data-page="settings">⚙️ تنظیمات</button>
+</nav>
+<main>
+<section class="page active" id="home">
+<h2 class="section-title">نقشهٔ توانایی‌های آوا</h2><p class="section-sub">این‌ها بخش‌هایی هستند که برای آوا طراحی می‌کنیم؛ هر کدام بعداً می‌تواند ابزار و عامل تخصصی خودش را داشته باشد.</p>
+<div class="grid">
+<div class="card module"><span class="ico">🧠</span><h3>مغز مرکزی و هماهنگ‌کننده</h3><p>فهم درخواست، تقسیم کار میان متخصص‌ها، جمع‌بندی و کنترل کیفیت پاسخ.</p><span class="tag">هستهٔ اصلی</span></div>
+<div class="card module"><span class="ico">📚</span><h3>تحقیق و یادگیری</h3><p>جست‌وجوی منابع معتبر، مقایسهٔ دیدگاه‌ها، ذکر منبع و تشخیص عدم‌قطعیت.</p><span class="tag">بررسی چندمرحله‌ای</span></div>
+<div class="card module"><span class="ico">📈</span><h3>ترید و بازارهای مالی</h3><p>آموزش از صفر، تحلیل تکنیکال و بنیادی، بک‌تست و حساب دمو.</p><span class="tag">بدون معاملهٔ خودکار</span></div>
+<div class="card module"><span class="ico">🎬</span><h3>ساخت ویدیو و تدوین</h3><p>ویدیوهای ۵ تا ۱۰ دقیقه‌ای، YouTube Shorts، سناریو، صدا و تدوین.</p><span class="tag">کیفیت در اولویت</span></div>
+<div class="card module"><span class="ico">🖼️</span><h3>تصویرسازی و طراحی گرافیک</h3><p>ساخت و ویرایش تصویر، طراحی پوستر، هویت بصری و آثار سه‌بعدی.</p><span class="tag">تصویر و گرافیک</span></div>
+<div class="card module"><span class="ico">💻</span><h3>برنامه‌نویسی و نرم‌افزار</h3><p>ساخت اپلیکیشن، وب‌سایت، ابزارهای شخصی، بررسی و آزمایش کد.</p><span class="tag">کدنویسی و تست</span></div>
+<div class="card module"><span class="ico">🤖</span><h3>رباتیک و مهندسی</h3><p>ربات‌ها، مدارها، حسگرها، مکانیک، طراحی صنعتی و نمونه‌سازی فیزیکی.</p><span class="tag">فراتر از کمپیوتر</span></div>
+<div class="card module"><span class="ico">🔧</span><h3>سخت‌افزار و عیب‌یابی</h3><p>کمک در تشخیص و تعمیر کمپیوتر، موبایل، دستگاه‌ها و سیستم‌های الکترونیکی.</p><span class="tag">سخت‌افزار و نرم‌افزار</span></div>
+<div class="card module"><span class="ico">🌍</span><h3>زبان‌ها و آموزش</h3><p>دری، فارسی، هزارگی، انگلیسی، فرانسوی، عربی، اردو و زبان‌های دیگر.</p><span class="tag">چندزبانه</span></div>
+<div class="card module"><span class="ico">🔍</span><h3>بازبین مستقل کیفیت</h3><p>بررسی پاسخ‌ها، پیدا کردن تناقض، خطا، ریسک و نیاز به منبع یا آزمایش.</p><span class="tag">کنترل کیفیت</span></div>
+<div class="card module"><span class="ico">🧠</span><h3>حافظهٔ پروژه‌ها</h3><p>نگهداری ترجیحات و تصمیم‌های مهم با کنترل و اجازهٔ صاحب آوا.</p><span class="tag">با اجازهٔ کاربر</span></div>
+<div class="card module"><span class="ico">✨</span><h3>توسعه‌دهندهٔ خود آوا</h3><p>کشف ایده‌ها، پیشنهاد قابلیت، ساخت نمونه و افزودن ماژول پس از تأیید تو.</p><span class="tag">قابل گسترش</span></div>
+</div>
+<div class="section-title">اصل‌های ثابت آوا</div><div class="stats"><div class="stat"><b>۱</b><span>دقت پیش از سرعت</span></div><div class="stat"><b>۲</b><span>منبع و آزمایش</span></div><div class="stat"><b>۳</b><span>اجازهٔ تو برای اقدام</span></div><div class="stat"><b>۴</b><span>قابلیت توسعهٔ آینده</span></div></div>
+</section>
+<section class="page" id="analysis">
+<h2 class="section-title">🧠 موتور تحلیل عمیق</h2><p class="section-sub">چارچوبی که قرار است آوا برای موضوع‌های مهم دنبال کند؛ فعلاً چک‌لیست محلی است، نه تحلیل خودکار هوش مصنوعی.</p>
+<div class="card"><div class="checklist">
+<label class="check"><input type="checkbox"> <span><b>۱. فهم دقیق مسئله:</b> سؤال اصلی، هدف و محدودیت‌ها را روشن کن.</span></label>
+<label class="check"><input type="checkbox"> <span><b>۲. تفکیک موضوع:</b> مسئله را به بخش‌های کوچک و قابل بررسی تقسیم کن.</span></label>
+<label class="check"><input type="checkbox"> <span><b>۳. تحقیق چندمنبعی:</b> منابع معتبر و تازه را پیدا و با هم مقایسه کن.</span></label>
+<label class="check"><input type="checkbox"> <span><b>۴. بررسی مخالف:</b> شواهد مخالف، فرض‌های پنهان و احتمال خطا را بررسی کن.</span></label>
+<label class="check"><input type="checkbox"> <span><b>۵. آزمایش:</b> هرجا ممکن است کد، محاسبه، بک‌تست یا نمونه را آزمایش کن.</span></label>
+<label class="check"><input type="checkbox"> <span><b>۶. بازبینی مستقل:</b> نتیجه را دوباره بررسی و موارد نامطمئن را مشخص کن.</span></label>
+<label class="check"><input type="checkbox"> <span><b>۷. پاسخ روشن:</b> نتیجه، دلیل، منبع، ریسک و قدم بعدی را جدا بنویس.</span></label>
+</div></div>
+<div class="field"><label for="analysisTopic">موضوعی که می‌خواهی عمیق بررسی شود</label><textarea id="analysisTopic" placeholder="مثلاً: بررسی یک ایدهٔ کسب‌وکار، تحلیل یک بازار یا مقایسهٔ دو فناوری..."></textarea></div>
+<button class="btn full" id="analysisTemplate">ساخت چارچوب تحلیل برای کپی</button><div class="result" id="analysisResult"></div>
+<p class="small muted">یادآوری: فکرکردن طولانی‌تر همیشه به معنی درست‌بودن نیست؛ آوا باید از منبع معتبر، آزمایش و بازبینی استفاده کند.</p>
+</section>
+<section class="page" id="video">
+<h2 class="section-title">🎬 مدیر هوشمند تولید ویدیو</h2><p class="section-sub">هدف: ویدیوی باکیفیت، پیوسته و خوش‌ساخت؛ نه فقط جمع‌کردن چند کلیپ بی‌ارتباط.</p>
+<div class="card">
+<div class="field"><label for="videoType">نوع ویدیو</label><select id="videoType"><option value="long">ویدیوی معمولی YouTube</option><option value="short">YouTube Shorts</option></select></div>
+<div class="field"><label for="videoLength">مدت هدف</label><select id="videoLength"><option value="300">۵ دقیقه (هدف اصلی)</option><option value="600">۱۰ دقیقه (هدف بلندتر)</option><option value="60">۶۰ ثانیه</option><option value="30">۳۰ ثانیه</option></select></div>
+<div class="field"><label for="videoMode">روش مصرف اعتبار</label><select id="videoMode"><option value="eco">اقتصادی: استفاده از سهمیه‌های رایگان مجاز</option><option value="pro">حرفه‌ای: کیفیت بالاتر با اجازهٔ من برای هزینه</option></select></div>
+<div class="field"><label for="videoQuality">اولویت کیفیت</label><select id="videoQuality"><option>بالاترین کیفیت ممکن</option><option>تعادل کیفیت و زمان</option><option>سرعت تولید</option></select></div>
+<div class="field"><label for="videoIdea">موضوع ویدیو</label><textarea id="videoIdea" placeholder="مثلاً یک انیمیشن سه‌بعدی داستانی دربارهٔ ساخت یک پل..."></textarea></div>
+<button class="btn full" id="videoPlan">ساخت نقشهٔ تولید ویدیو</button><div class="result" id="videoResult"></div>
+</div>
+<div class="callout" style="margin-top:12px"><b>قاعدهٔ اصلی:</b> حالت اقتصادی به‌صورت پیش‌فرض انتخاب شده. آوا فقط از روش‌های رسمی و مجاز برای اتصال ابزارها استفاده می‌کند؛ سهمیه‌ها و کردیت‌های سرویس‌ها معمولاً قابل انتقال به هم نیستند. کلیپ‌ها را می‌توان تدوین کرد، اما برای ۵ دقیقه تصویر متحرکِ کاملاً تولیدشده باید مجموع زمان خروجی کافی باشد.</div>
+<div class="warning" style="margin-top:10px">تولید واقعی ویدیو هنوز به سرویس تولید ویدیو و اتصال فنی نیاز دارد. این صفحه فعلاً نقشهٔ تولید می‌سازد و ویدیو تولید نمی‌کند.</div>
+</section>
+<section class="page" id="skills">
+<h2 class="section-title">🧰 تخصص‌های آوا</h2><p class="section-sub">هر تخصص در نسخهٔ کامل می‌تواند عامل جداگانه، ابزار، حافظه و معیار آزمایش خودش را داشته باشد.</p>
+<div class="grid">
+<div class="card"><h3>📈 ترید</h3><p class="small muted">شناخت کندل‌ها، ساختار بازار، مدیریت ریسک، تحلیل تکنیکال و بنیادی، حساب آزمایشی و بک‌تست.</p><div class="tag">معامله فقط با اجازهٔ صریح</div></div>
+<div class="card"><h3>🤖 رباتیک</h3><p class="small muted">میکروکنترلر، موتور، سنسور، مدار، طراحی مکانیکی، شبیه‌سازی و نمونهٔ اولیه.</p><div class="tag">نیازمند قطعه و آزمایش واقعی</div></div>
+<div class="card"><h3>🏭 طراحی و ساخت</h3><p class="small muted">طراحی صنعتی، انتخاب مواد، نقشه، اندازه‌گذاری، ساخت نمونه و ارزیابی ایمنی.</p><div class="tag">ساخت اشیای فیزیکی</div></div>
+<div class="card"><h3>💻 نرم‌افزار</h3><p class="small muted">وب، اپلیکیشن موبایل، پایگاه داده، API، امنیت، آزمایش و رفع اشکال.</p><div class="tag">کد قابل آزمایش</div></div>
+<div class="card"><h3>🎨 گرافیک و سه‌بعدی</h3><p class="small muted">لوگو، پوستر، رابط کاربری، مدل سه‌بعدی، نورپردازی و رندر.</p><div class="tag">طراحی بصری</div></div>
+<div class="card"><h3>🛠️ سخت‌افزار</h3><p class="small muted">کامپیوتر، موبایل، شبکه، قطعات الکترونیکی، عیب‌یابی و نگهداری دستگاه‌ها.</p><div class="tag">تشخیص مرحله‌به‌مرحله</div></div>
+</div>
+<div class="warning" style="margin-top:12px">در پروژه‌های فیزیکی، آوا باید خطر برق، باتری، حرارت، ابزار برش، حرکت مکانیکی و ایمنی افراد را بررسی کند. هیچ دستور آزمایش پرخطر نباید بدون ارزیابی ایمنی و نظارت مناسب اجرا شود.</div>
+</section>
+<section class="page" id="growth">
+<h2 class="section-title">✨ توسعه‌دهندهٔ خود آوا</h2><p class="section-sub">این قسمت برای ایده‌هایی است که امروز به ذهنمان نمی‌رسند و شاید فردا بخواهیم به آوا اضافه کنیم.</p>
+<div class="callout">اصل توسعه: آوا می‌تواند پیشنهاد بدهد، طراحی کند، نمونه بسازد و آزمایش کند؛ اما نصب تغییرات مهم، دسترسی به اطلاعات، هزینه‌کردن، معامله و کنترل دستگاه فیزیکی باید با اجازهٔ تو باشد.</div>
+<div class="field"><label for="ideaTitle">نام قابلیت تازه</label><input id="ideaTitle" maxlength="90" placeholder="مثلاً: دستیار طراحی خانه هوشمند"></div>
+<div class="field"><label for="ideaDetail">توضیح بده چه کاری انجام دهد</label><textarea id="ideaDetail" placeholder="این قابلیت چه مشکلی را حل کند؟ چه چیزی لازم دارد؟"></textarea></div>
+<div class="field"><label for="ideaGroup">دستهٔ قابلیت</label><select id="ideaGroup"><option>هوش و تحلیل</option><option>ویدیو و تصویر</option><option>رباتیک و مهندسی</option><option>برنامه‌نویسی و نرم‌افزار</option><option>ترید و مالی</option><option>آموزش و زبان</option><option>امنیت و حریم خصوصی</option><option>سایر</option></select></div>
+<button class="btn full" id="saveIdea">ذخیرهٔ ایده در آوا</button>
+<div class="section-title">ایده‌های ذخیره‌شده</div><div id="ideas" class="list"></div>
+<div class="divider"></div>
+<h3 style="font-size:14px">چرخهٔ اضافه‌کردن قابلیت در نسخهٔ کامل</h3><div class="checklist">
+<div class="check">💡 <span>کشف نیاز و تعریف قابلیت</span></div><div class="check">🧩 <span>طراحی ماژول و بررسی ابزارها و هزینه</span></div><div class="check">🧪 <span>ساخت نمونه و اجرای آزمایش</span></div><div class="check">🔒 <span>بازبینی امنیت، حریم خصوصی و ریسک</span></div><div class="check">✅ <span>تأیید تو و سپس نصب قابلیت</span></div>
+</div>
+<p class="small muted">ایده‌ها در همین مرورگر و روی همین دستگاه ذخیره می‌شوند. هنوز به حساب ابری یا حافظهٔ مشترک چنددستگاهی وصل نیستند.</p>
+</section>
+<section class="page" id="chat">
+<h2 class="section-title">💬 گفت‌وگو با آوا</h2><div class="warning">موتور گفت‌وگوی هوش مصنوعی هنوز متصل نشده است. برای جلوگیری از گمراهی، این نسخه وانمود نمی‌کند که پاسخ هوشمند تولید می‌کند.</div>
+<div class="field"><label for="chatText">درخواست یا سؤال</label><textarea id="chatText" placeholder="در نسخهٔ بعدی، اینجا با مغز مرکزی آوا گفت‌وگو می‌کنی..."></textarea></div>
+<button class="btn secondary full" id="copyRequest">کپی درخواست برای استفاده در گفت‌وگوی هوش مصنوعی</button><div class="result" id="chatResult"></div>
+</section>
+<section class="page" id="settings">
+<h2 class="section-title">⚙️ تنظیمات و وضعیت پروژه</h2>
+<div class="card"><h3 style="font-size:14px;margin-top:0">وضعیت قابلیت‌ها</h3>
+<div class="list">
+<div class="idea"><div class="txt"><b>رابط موبایلی و کار آفلاین</b><p>فعال؛ پس از میزبانی HTTPS قابل نصب است.</p></div><span class="pill">آماده</span></div>
+<div class="idea"><div class="txt"><b>ذخیرهٔ ایده‌ها روی دستگاه</b><p>فعال؛ از حافظهٔ مرورگر استفاده می‌کند.</p></div><span class="pill">آماده</span></div>
+<div class="idea"><div class="txt"><b>مغز هوش مصنوعی و تحقیق زنده</b><p>نیازمند سرور و اتصال امن به مدل و وب.</p></div><span class="tag">بعداً</span></div>
+<div class="idea"><div class="txt"><b>تولید تصویر و ویدیو</b><p>نیازمند سرویس مجاز و سهمیه یا هزینه.</p></div><span class="tag">بعداً</span></div>
+<div class="idea"><div class="txt"><b>رباتیک و کنترل سخت‌افزار</b><p>نیازمند طراحی، قطعه، کنترلر و آزمایش ایمن.</p></div><span class="tag">بعداً</span></div>
+<div class="idea"><div class="txt"><b>حافظهٔ ابری و کار ۲۴ ساعته</b><p>نیازمند سرور، زمان‌بندی و زیرساخت پایدار.</p></div><span class="tag">بعداً</span></div>
+</div></div>
+<div class="card" style="margin-top:12px"><h3 style="font-size:14px;margin-top:0">مدیریت اطلاعات محلی</h3><p class="small muted">ایده‌هایی که در این دستگاه ذخیره کرده‌ای را می‌توانی به شکل فایل متنی دریافت کنی.</p><button class="btn secondary full" id="exportIdeas">دریافت نسخهٔ پشتیبان ایده‌ها</button><button class="btn danger full" id="clearIdeas">پاک‌کردن تمام ایده‌های ذخیره‌شده</button></div>
+<div class="notice">امنیت: کلید API را هرگز داخل فایل‌های این برنامه یا مرورگر قرار نده. در نسخهٔ متصل، کلیدها باید فقط در سرور امن نگهداری شوند.</div>
+</section>
+</main>
+<footer>آوا · نسخهٔ آزمایشی ۰.۲ · ساخته‌شده برای گسترش مرحله‌به‌مرحله<br>این نسخه نمونهٔ رابط و ابزارهای محلی است، نه محصول کامل متصل به هوش مصنوعی.</footer>
+</div>
+<script>
+(()=>{
+'use strict';
+const $=id=>document.getElementById(id);
+const KEY='ava_v02_ideas';
+function loadIdeas(){try{return JSON.parse(localStorage.getItem(KEY)||'[]')}catch(e){return []}}
+function saveIdeas(items){localStorage.setItem(KEY,JSON.stringify(items))}
+function safeText(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function showPage(id){document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===id));document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===id));window.scrollTo({top:0,behavior:'smooth'})}
+document.querySelectorAll('.nav button').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.page)));
+function renderIdeas(){const box=$('ideas'),items=loadIdeas();if(!items.length){box.innerHTML='<div class="empty">هنوز ایده‌ای ذخیره نشده است. اولین ایده را اضافه کن.</div>';return;}box.innerHTML=items.map((it,i)=>`<div class="idea"><div class="txt"><b>${safeText(it.title)}</b><p>${safeText(it.group)} · ${safeText(it.date)}<br>${safeText(it.detail)}</p></div><button data-del="${i}" aria-label="حذف ایده">حذف</button></div>`).join('');box.querySelectorAll('[data-del]').forEach(b=>b.addEventListener('click',()=>{const a=loadIdeas();a.splice(Number(b.dataset.del),1);saveIdeas(a);renderIdeas()}));}
+$('saveIdea').addEventListener('click',()=>{const title=$('ideaTitle').value.trim(),detail=$('ideaDetail').value.trim();if(!title){alert('اول نام قابلیت را بنویس.');return;}const a=loadIdeas();a.unshift({title,detail:detail||'بدون توضیح',group:$('ideaGroup').value,date:new Date().toLocaleDateString('fa-IR')});saveIdeas(a);$('ideaTitle').value='';$('ideaDetail').value='';renderIdeas();alert('ایده روی همین دستگاه ذخیره شد.');});
+$('analysisTemplate').addEventListener('click',()=>{const t=$('analysisTopic').value.trim();if(!t){alert('اول موضوع را بنویس.');return;}const out=`درخواست تحلیل عمیق برای آوا\nموضوع: ${t}\n\n۱) مسئله و هدف را دقیق تعریف کن.\n۲) موضوع را به پرسش‌های کوچک تقسیم کن.\n۳) از چند منبع معتبر و تازه تحقیق کن و منبع هر ادعا را بیاور.\n۴) شواهد موافق و مخالف را مقایسه کن.\n۵) فرض‌ها، محدودیت‌ها و عدم‌قطعیت‌ها را مشخص کن.\n۶) محاسبه، آزمایش، کدنویسی یا بک‌تست لازم را انجام بده.\n۷) نتیجه را از زاویهٔ یک بازبین مستقل نقد کن.\n۸) پاسخ نهایی را با نتیجه، دلایل، ریسک‌ها و قدم بعدی ارائه بده.\n۹) چیزی را که بررسی نکرده‌ای، قطعی بیان نکن.`;const r=$('analysisResult');r.style.display='block';r.textContent=out;});
+$('videoPlan').addEventListener('click',()=>{const type=$('videoType').value,secs=Number($('videoLength').value),mode=$('videoMode').value,quality=$('videoQuality').value,idea=$('videoIdea').value.trim();if(!idea){alert('موضوع ویدیو را بنویس.');return;}const duration=secs>=60?`${Math.floor(secs/60)} دقیقه${secs%60?' و '+secs%60+' ثانیه':''}`:`${secs} ثانیه`;const shape=type==='short'?'عمودی ۹:۱۶، شروع جذاب در ۱ تا ۲ ثانیهٔ اول، ریتم تند و زیرنویس خوانا':'افقی ۱۶:۹، مقدمهٔ جذاب، بخش‌بندی داستانی، گذار نرم و پایان روشن';const out=`نقشهٔ تولید ویدیو در آوا\nموضوع: ${idea}\nمدت هدف: ${duration}\nقالب: ${shape}\nحالت: ${mode==='eco'?'اقتصادی؛ سهمیه‌های رایگانِ مجاز':'حرفه‌ای؛ هزینه فقط با اجازهٔ کاربر'}\nاولویت: ${quality}\n\nمراحل پیشنهادی:\n۱) نوشتن سناریو و تقسیم آن به صحنه‌ها.\n۲) تعیین سبک ثابت شخصیت‌ها، رنگ، نور و محیط برای پیوستگی.\n۳) ساخت تصاویر مرجع و استوری‌بورد.\n۴) تولید کلیپ‌ها با ابزارهای مجاز؛ ثبت مدت و کیفیت هر خروجی.\n۵) بازبینی هر صحنه و اصلاح موارد ضعیف.\n۶) تدوین، صداگذاری، موسیقی مجاز، زیرنویس و تنظیم خروجی.\n۷) بررسی نهایی تصویر، صدا، نسبت تصویر و حق استفاده.\n\nتوجه: این نقشه است؛ این نسخه هنوز ویدیو را تولید نمی‌کند.`;const r=$('videoResult');r.style.display='block';r.textContent=out;});
+$('copyRequest').addEventListener('click',async()=>{const t=$('chatText').value.trim();if(!t){alert('اول درخواستت را بنویس.');return;}try{await navigator.clipboard.writeText(t);$('chatResult').style.display='block';$('chatResult').textContent='درخواست کپی شد. اکنون می‌توانی آن را در یک گفت‌وگوی هوش مصنوعی وارد کنی.';}catch(e){$('chatResult').style.display='block';$('chatResult').textContent='کپی خودکار در این مرورگر ممکن نشد. متن درخواستت را انتخاب و دستی کپی کن:\n\n'+t;}});
+$('exportIdeas').addEventListener('click',()=>{const data=JSON.stringify(loadIdeas(),null,2);const blob=new Blob([data],{type:'application/json;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='ava-ideas-backup.json';a.click();URL.revokeObjectURL(url);});
+$('clearIdeas').addEventListener('click',()=>{if(confirm('تمام ایده‌های ذخیره‌شده در این دستگاه پاک شوند؟')){localStorage.removeItem(KEY);renderIdeas();}});
+renderIdeas();
+if('serviceWorker' in navigator && location.protocol!=='file:'){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}
+})();
+</script>
+</body>
+</html>
