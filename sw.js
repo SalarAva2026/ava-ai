@@ -1,4 +1,4 @@
-const CACHE = 'ava-pwa-v03';
+const CACHE = 'ava-pwa-v04';
 
 const FILES = [
   './',
