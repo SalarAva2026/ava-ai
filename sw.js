@@ -4,8 +4,8 @@ const FILES = [
   './',
   './index.html',
   './manifest.json',
-  './ava-icon-192-warm.png',
-  './ava-icon-512-warm.png'
+'./ava-icon-192.png',
+ './ava-icon-512.png'
 ];
 
 self.addEventListener('install', event => {
